@@ -31,7 +31,7 @@ namespace Events.Application.Users.Commands.Register
                 BirthDate = request.BirthDate,
                 Email = request.Email,
                 Password = _passwordHasher.Generate(request.Password),
-                IsAdmin = false,
+                IsAdmin = true,
                 Participations = new List<Participation>()
             };
 
